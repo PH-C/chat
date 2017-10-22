@@ -1,4 +1,4 @@
-let express = require('express');
+﻿let express = require('express');
 let path = require('path');
 let app = express();
 app.get('/',function(req,res){
@@ -52,7 +52,7 @@ io.on('connection',function(socket){
         socket.emit('userList',userList);
     });
 });
-server.listen(8080);
+server.listen(80);
 
 /**
  * 1.实现匿名聊天
